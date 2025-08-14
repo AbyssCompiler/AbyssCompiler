@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Save as banner-abyss-magic-animated.svg --><svg aria-label="Abyss Compiler — Turning chaos into clean code" height="320" role="img" viewBox="0 0 1200 320" width="1200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Gradients -->
+<linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#030b1e"/>
+<stop offset="100%" stop-color="#071a3a"/>
+</linearGradient>
+<linearGradient id="accentGrad" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0%" stop-color="#4550f0ff">
+<animate attributeName="offset" dur="8s" repeatCount="indefinite" values="0;1;0"/>
+</stop>
+<stop offset="100%" stop-color="#451ba0ff">
+<animate attributeName="offset" dur="8s" repeatCount="indefinite" values="1;0;1"/>
+</stop>
+</linearGradient>
+<radialGradient cx="50%" cy="50%" id="glow" r="50%">
+<stop offset="0%" stop-color="rgba(41, 87, 212, 0.4)">
+<animate attributeName="stop-color" dur="6s" repeatCount="indefinite" values="rgba(0,229,255,0.4);rgba(143,92,255,0.4);rgba(0,229,255,0.4)"/>
+</stop>
+<stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+</radialGradient>
+<!-- Styles -->
+<style>
+  .title { font-family: Verdana, Arial, sans-serif; font-weight: 800; font-size: 48px; fill: url(#accentGrad); letter-spacing: 1px; }
+  .title-glow { fill: none; stroke: url(#accentGrad); stroke-width: 1.5; filter: blur(3px); opacity: 0.6; animation: pulseGlow 5s ease-in-out infinite; }
+  .subtitle { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 16px; fill: #8ea7ceff; opacity: 0.9; }
+  .rune { font-family: 'Fira Code', monospace; font-size: 12px; fill: rgba(200,220,255,0.25); animation: flicker 5s infinite alternate; }
+  .particle { font-family: 'Fira Code', monospace; font-size: 14px; fill: rgba(0,229,255,0.6); animation: drift 12s infinite ease-in-out alternate; }
+  @keyframes drift { 
+    0% { transform: translateY(0px) translateX(0px); opacity: 0.6; }
+    100% { transform: translateY(-25px) translateX(15px); opacity: 0.2; }
+  }
+  @keyframes flicker { 0%, 100% { opacity: 0.15; } 50% { opacity: 0.4; } }
+  @keyframes pulseGlow { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+</style>
+</defs>
+<!-- Background -->
+<rect fill="#cbececff" height="320" width="1200"/>
+<!-- Soft glow -->
+<circle cx="300" cy="140" fill="url(#glow)" opacity="0.5" r="200"/>
+<!-- Abyss wave -->
+<path d="M0,220 C180,150 360,290 600,240 C840,190 1020,260 1200,220 L1200,320 L0,320 Z" fill="url(#accentGrad)" opacity="0.08">
+<animateTransform attributeName="transform" dur="10s" repeatCount="indefinite" type="translate" values="0 0; 20 0; 0 0"/>
+</path>
+<!-- Floating runes -->
+<text class="rune" style="animation-delay: 1s;" x="20" y="80">HTML</text>
+<text class="rune" style="animation-delay: 0s;" x="40" y="140">React</text>
+<text class="rune" style="animation-delay: 1s;" x="100" y="60">{}</text>
+<text class="rune" style="animation-delay: 2s;" x="260" y="90">fn()</text>
+<text class="rune" style="animation-delay: 3s;" x="320" y="30">AI</text>
+<text class="rune" style="animation-delay: 3s;" x="350" y="210">Lisp</text>
+<text class="rune" style="animation-delay: 4s;" x="480" y="50">&lt;/&gt;</text>
+<text class="rune" style="animation-delay: 5s;" x="520" y="85">Python</text>
+<text class="rune" style="animation-delay: 0s;" x="550" y="200">Java</text>
+<text class="rune" style="animation-delay: 3s;" x="650" y="200">TensorFlow</text>
+<text class="rune" style="animation-delay: 3s;" x="660" y="80">CSS</text>
+<text class="rune" style="animation-delay: 6s;" x="680" y="140">C++</text>
+<text class="rune" style="animation-delay: 7s;" x="800" y="180">Zapier</text>
+<text class="rune" style="animation-delay: 8s;" x="850" y="70">JavaScript</text>
+<text class="rune" style="animation-delay: 9s;" x="980" y="70">Make</text>
+<text class="rune" style="animation-delay: 10s;" x="1080" y="70">ML</text>
+<text class="rune" style="animation-delay: 2s;" x="920" y="140">CSS</text>
+<!-- Title -->
+<g transform="translate(120,140)">
+<text class="title-glow" x="0" y="0">Abyss Compiler</text>
+<text class="title" x="0" y="0">Abyss Compiler</text>
+<text class="subtitle" x="0" y="30">Turning chaos into clean code — from the deepest abyss.</text>
+</g>
+<!-- Skills box -->
+<g transform="translate(880,110)">
+<rect fill="#FFFFFF" height="80" rx="12" ry="12" stroke="rgba(255,255,255,0.05)" width="260" x="0" y="0"/>
+<text fill="#222222" font-family="Fira Code, monospace" font-size="14" x="18" y="32">&lt;/&gt; Full-Stack • AI Engineer</text>
+<text fill="#222222" font-family="Inter, sans-serif" font-size="12" x="18" y="54">Python · Java · JavaScript · ML · Cloud</text>
+</g>
+</svg>
